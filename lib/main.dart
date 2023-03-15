@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:hamofy_hotel/screens/main_screen.dart';
+import 'package:hamofy_hotel/screens/signup3.dart';
 
 import 'package:hamofy_hotel/util/const.dart';
 
@@ -20,7 +22,7 @@ class _MyAppState extends State<MyApp> {
       title: Constants.appName,
       theme: Constants.lightTheme,
       darkTheme: Constants.darkTheme,
-      home: MainScreen(),
+      home: SignupThreePage(),
     );
   }
 }

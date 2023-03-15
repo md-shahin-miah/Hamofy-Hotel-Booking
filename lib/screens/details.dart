@@ -10,7 +10,7 @@ class Details extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back,
           ),
           onPressed: () => Navigator.pop(context),
@@ -26,13 +26,13 @@ class Details extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           buildSlider(),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ListView(
-            padding: EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20),
             primary: false,
-            physics: NeverScrollableScrollPhysics(),
+            physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             children: <Widget>[
               Row(
@@ -42,7 +42,7 @@ class Details extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Text(
                       "${places[0]["name"]}",
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.w700,
                         fontSize: 20,
                       ),
